@@ -1,0 +1,109 @@
+$primary-color: #fff;
+$text-color: rgb(12, 11, 11) ;
+$content-height: 100% ;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: $primary-color;
+}
+.row{
+    height: $content-height;
+}
+.myCard{
+    position: relative;
+    background: $primary-color;
+    height: $content-height;
+    border-radius: 25px;
+    box-shadow: 0px 10px 40px -8px rgba(0, 0, 0, 0.829);
+    
+  } 
+.container{
+    position: absolute;
+    max-width: 800px;
+    height: 500px;  
+    top: 50%;
+    left: 50%;
+    margin: auto;
+    transform: translate(-50%, -50%);
+}
+.myRightctn{
+    position: relative;
+    background-image: linear-gradient(45deg, #1fe0fa, #2bf610);
+    border-radius: 25px;
+    height: $content-height;
+    padding: 25px;
+    color: $text-color;
+    font-size: 15px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    header {
+        color: $text-color;
+        font-size: 44px;
+        margin: 10px;
+        margin-bottom: 20px !important;
+      }
+      .butt_out{
+          background: transparent;
+          border: $primary-color 1px solid;
+          border-radius: 20px;
+          padding: 10px;
+          width: 130px;
+          color: $primary-color;
+          box-shadow: 0px 10px 49px -10px rgba(0, 0, 0, 0.822);
+          &:hover{
+            border: rgb(52, 94, 231) 1px solid;
+            color: rgb(52, 94, 231);
+            transition: .5s;
+          }
+      }
+}
+.mylfctn{
+    position: relative;
+    background:$primary-color;
+    height: $content-height;
+    border-radius: 25px;
+    padding: 30px;
+    padding-left: 50px;
+
+    header{
+        color: rgb(20, 235, 170);
+        font-size: 25px;
+        font-weight: 700;
+        margin-bottom: 20px;     
+    }
+    ion-icon{
+        position: relative;
+        color: rgb(0, 255, 128);
+        font-size: 25px;
+    }
+}
+.mylfctn .myInput {
+    width: 230px;
+    border-radius: 25px;
+    padding: 10px;
+    padding-left: 50px;
+    border: none;
+    box-shadow: 0px 10px 49px -10px rgba(0, 0, 0, 0.822);
+    &:focus{
+        outline: none;
+    }
+  }
+  .mylfctn .butt{
+    background-image: linear-gradient(45deg, #66f37e, #23e709);
+    width: 230px;
+    border-radius: 25px;
+    padding: 10px;
+    padding-left: 10px;
+    border: none;
+    box-shadow: 0px 10px 49px -5px rgba(0, 0, 0, 0.932);
+    &:hover{
+        background-image: linear-gradient(45deg,#23e709, #66f37e);
+        transition: .5s;
+    }
+  }
+  
